@@ -6,10 +6,6 @@ from elasticsearch import Elasticsearch
 
 class DataProcessor:
     def __init__(self):
-        """
-        Initialization
-        :param url: url to send data from to Elasticsearch
-        """
         self.es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
 
 
